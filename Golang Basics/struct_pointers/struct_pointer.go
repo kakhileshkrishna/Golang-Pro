@@ -1,19 +1,18 @@
 // Create struct Person with (Name and ID). update name of one person
-package main 
+package struct_pointers
 
 import "fmt"
 
-type Person struct{
+type Person struct {
 	Name string
-	id int
+	id   int
 }
 
-func update(p *Person, id int){
-	p.id = id;
+func update(p *Person, id int) {
+	p.id = id
 }
 
-
-func main(){
+func StructPointer() {
 	akhilesh := Person{Name: "Akhilesh", id: 20}
 
 	fmt.Println(akhilesh)
@@ -22,4 +21,3 @@ func main(){
 
 	fmt.Println(akhilesh)
 }
-
